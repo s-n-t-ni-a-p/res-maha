@@ -94,8 +94,7 @@ def cleanup_orphaned_thumbnails(directory):
                         print(f"❌ Delete karne me error aayi: {e}")
 
 if __name__ == "__main__":
-    # Sirf Mahadev wale naye folders ke andar hi thumbnail banenge aur cleanup hoga
-    target_folders = ["M", "B", "S", "V"]
+    target_folders = ["B", "SP", "O", "V"]
     for folder in target_folders:
         if os.path.exists(folder):
             generate_thumbnails(folder)
