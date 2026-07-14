@@ -3,14 +3,15 @@ import json
 import subprocess
 import time
 
-base_raw_url = "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-rk/main/"
+
+base_raw_url = "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/"
+
 
 folders = {
-    "S": "Videos",
-    "RK": "Radha Krishna",
-    "O": "Others",
-    "R": "Radha",
-    "K": "Krishna"
+    "M": "Mahakal",
+    "B": "Bholenath",
+    "S": "Shiv Parvati",
+    "V": "Videos"
 }
 
 def get_file_age_in_days(filepath):
