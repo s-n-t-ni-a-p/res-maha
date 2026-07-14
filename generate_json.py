@@ -3,14 +3,12 @@ import json
 import subprocess
 import time
 
-
 base_raw_url = "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/"
 
-
 folders = {
-    "M": "Mahakal",
     "B": "Bholenath",
-    "S": "Shiv Parvati",
+    "SP": "Shiv Parvati",
+    "O": "Others",
     "V": "Videos"
 }
 
