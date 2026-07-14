@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "url": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/B/1.jpg",
+    "category": "Bholenath",
+    "isNew": "true"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/V/1.mp4",
+    "category": "Videos",
+    "isNew": "true"
+  }
+]
