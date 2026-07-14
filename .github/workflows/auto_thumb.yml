@@ -8,11 +8,10 @@ on:
     branches:
       - main
     paths:
+      - 'M/**'
+      - 'B/**'
       - 'S/**'
-      - 'RK/**'
-      - 'O/**'
-      - 'R/**'
-      - 'K/**'
+      - 'V/**'
   workflow_dispatch:
 
 jobs:
