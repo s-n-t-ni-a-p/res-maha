@@ -1,0 +1,54 @@
+name: Auto Generate Thumbnails
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'S/**'
+      - 'RK/**'
+      - 'O/**'
+      - 'R/**'
+      - 'K/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Python Libraries
+        run: pip install Pillow opencv-python-headless numpy
+
+      - name: Run Thumbnail Generator Script
+        run: python generate_thumbs.py
+
+      - name: Commit and Push New Thumbnails
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # '-A' ka matlab hai ki naye items add bhi karo aur delete hue items ko server se hatao bhi
+          git add -A
+          
+          if git diff-index --quiet HEAD; then
+            echo "Koi nayi thumbnail nahi mili, sab pehle se set hai. ✅"
+          else
+            git commit -m "Auto-generated thumbnails [skip ci]"
+            git pull --rebase origin main
+            git push
+            echo "Nayi thumbnails save/delete ho gayi hain! 🚀"
+          fi
