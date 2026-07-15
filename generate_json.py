@@ -6,7 +6,7 @@ import time
 base_raw_url = "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/"
 
 folders = {
-    "B": "Bholenath",
+    "S": "Lord Shiva",
     "SP": "Shiv Parvati",
     "O": "Others",
     "V": "Videos"
