@@ -18,11 +18,13 @@ def get_file_age_in_days(filepath):
         result = subprocess.run(cmd, shell=True, stdout=subprocess.PIPE, text=True)
         output = result.stdout.strip()
         if output:
-            oldest_timestamp = int(output.split('\n')[-1])
-            return (time.time() - oldest_timestamp) / (24 * 3600)
+            # Yahan sahi logic lagaya hai: [0] for latest date aur variable ka naam fix kar diya
+            latest_timestamp = int(output.split('\n')[0])
+            return (time.time() - latest_timestamp) / (24 * 3600)
         else:
             return 999.0
-    except Exception:
+    except Exception as e:
+        print(f"Error checking {filepath}: {e}")
         return 999.0
 
 wallpaper_list = []
