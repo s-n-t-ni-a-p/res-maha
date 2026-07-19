@@ -1,17 +1,8 @@
 [
   {
-    "name": "12 Jyotirlinga",
-    "thumb": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/images/thumb_jyotirlinga.jpg",
-    "jsonUrl": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/jyotirlinga_wallpapers.json"
+    "name": "Radha Krishna",
+    "thumb": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-rk/refs/heads/main/Notification.jpg",
+    "jsonUrl": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-rk/refs/heads/main/wallpapers.json"
   },
-  {
-    "name": "Mahakal Ujjain",
-    "thumb": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/images/thumb_mahakal.jpg",
-    "jsonUrl": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/mahakal_wallpapers.json"
-  },
-  {
-    "name": "Kedarnath",
-    "thumb": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/images/thumb_kedarnath.jpg",
-    "jsonUrl": "https://raw.githubusercontent.com/s-n-t-ni-a-p/res-maha/main/kedarnath_wallpapers.json"
-  }
+
 ]
